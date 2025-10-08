@@ -95,7 +95,6 @@ eas.json
 package.json
 README.md
 
-text
 
 ---
 
@@ -105,7 +104,6 @@ text
 git clone https://github.com/saurabhmadrap07/House_of_Edtech_Assignment.git
 cd House_of_Edtech_Assignment
 
-text
 
 2. **Install dependencies**
 npm install
@@ -113,7 +111,7 @@ npm install
 or
 yarn
 
-text
+
 
 3. **Check/Add Assets**
 - Ensure `assets/splash.png` and `assets/notification-icon.png` are present
@@ -121,7 +119,7 @@ text
 4. **Start the Expo dev server**
 npx expo start
 
-text
+
 - Scan QR with Expo Go app or launch on emulator
 
 ---
@@ -131,17 +129,16 @@ text
 1. **Install EAS CLI**
 npm install -g eas-cli
 
-text
 
 2. **Configure**
 eas build:configure
 
-text
+
 
 3. **Build APK**
 eas build -p android --profile preview
 
-text
+
 (AAB for Play Store upload: `eas build -p android --profile production`)
 
 4. **Download APK from Expo dashboard**
