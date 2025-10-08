@@ -1,30 +1,59 @@
 {
   "expo": {
-    "name": "HouseOfEdtechAssignment",
-    "slug": "HouseOfEdtechAssignment",
+    "name": "ReactNativeWebViewVideoApp",
+    "slug": "reactnative-webview-video-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourname.reactnativewebvideoapp",
+      "infoPlist": {
+        "NSUserNotificationUsageDescription": "This app uses notifications to inform users."
+      }
     },
     "android": {
+      "package": "com.yourname.reactnativewebvideoapp",
+      "permissions": [
+        "NOTIFICATIONS"
+      ],
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+        "backgroundColor": "#FFFFFF"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#ffffff"
+        }
+      ]
+    ],
+    "notification": {
+      "icon": "./assets/notification-icon.png",
+      "color": "#1db954",
+      "androidMode": "default",
+      "androidCollapsedTitle": "ReactNativeWebViewVideoApp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2bb55b4b-082f-43c5-b402-af029fd66cc3"
+      }
     }
   }
 }
